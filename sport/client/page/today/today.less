@@ -1,0 +1,114 @@
+.today{
+
+  .today-top{
+    margin-top:.8rem;
+    padding:.4rem 0;
+    width:100%;
+    background: rgba(0,0,0,0.3);
+    overflow: hidden;
+    img{
+      display: block;
+      float:left;
+      width:2.5rem;
+      height:2.5rem;
+      border-radius: 50%;
+    }
+    .username{
+      float:left;
+      padding:0 0 .3rem .3rem;
+      font-size: 1rem;
+      color:#fff;
+    }
+    .sign-in{
+      float:left;
+      padding:0 0 .3rem .3rem;
+      font-size: .5rem;
+      color:rgba(255,255,255,0.6)
+    }
+  }
+  .today-content{
+    width:100%;
+    p,.motion-type{
+      position: relative;
+      padding:0 .2rem;
+      height:1rem;
+      width:6.5rem;
+      background-color: rgba(0,0,0,0.3);
+      margin:.3rem auto 0;
+      color:rgba(255,255,255,0.7);
+      font-size: .45rem;
+      line-height: 1rem;
+      .motion-warning{
+        position: absolute;
+        bottom:1rem;
+        right:0;
+        width:4rem;
+        height:1rem;
+        background-color: rgba(0,0,0,0.6);
+        font-size:.4rem;
+        color:#fff;
+        line-height: .5rem;
+        text-align:center;
+        border:.02rem solid #fff;
+      }
+      .today-content-desc{
+        display: inline-block;
+        width:3.4rem;
+      }
+      .today-content-option{
+        display: inline-block;
+        position: relative;
+        top:.04rem;
+        color:#fff;
+        padding:0 .8rem 0 .2rem;
+        width:1.8rem;
+        height:.8rem;
+        line-height: .8rem;
+        border:.04rem solid rgba(255,255,255,0.5);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: top;
+        .down-arrow{
+          position: absolute;
+          top:.3rem;
+          left:1.6rem;
+          display: inline-block;
+          width:0;
+          height:0;
+          border:.2rem solid transparent;
+          border-top-color:#fff;
+        }
+      }
+      .motion-lists{
+        position: absolute;
+        z-index: 1;
+        right:0.43rem;
+        top:0.9rem;
+        width:2.8rem;
+        border:.04rem solid rgba(255,255,255,0.5);
+        color:#fff;
+        background-color: #858585;
+        .motion-list{
+          font-size: .4rem;
+          text-align: center;
+          height:.7rem;
+          line-height: .7rem;
+          border-bottom:.04rem solid rgb(243, 255, 246);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .motion-list:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+    p:last-child{
+      text-align: center;
+      width:4rem;
+      border:.02rem solid #fff;
+      color:#fff;
+    }
+  }
+}
